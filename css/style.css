@@ -4,6 +4,7 @@
   background: linear-gradient(180deg, rgba(254, 254, 255, 0.041) 0%, rgba(255, 255, 255, 0.02) 100%);
   -webkit-box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+  border: 0;
   border-radius: 34px;
   border-image-source: linear-gradient(97.12deg, rgba(255, 255, 255, 0.08) -3.52%, rgba(255, 255, 255, 0.07) 100.35%);
 }
