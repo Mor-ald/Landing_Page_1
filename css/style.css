@@ -2,7 +2,7 @@
   text-align: center;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(254, 254, 255, 0.041)), to(rgba(255, 255, 255, 0.02)));
   background: linear-gradient(180deg, rgba(254, 254, 255, 0.041) 0%, rgba(255, 255, 255, 0.02) 100%);
-  border: 0;
+  border: 1px solid #272e3b;
   border-radius: 34px;
 }
 
@@ -168,7 +168,7 @@ header,
           align-items: center;
   margin: 0 32px 0 0;
   width: 135px;
-  height: 61px;
+  height: 45px;
   border-radius: 6px;
   background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
   font-style: normal;
@@ -217,8 +217,8 @@ header,
   height: 4px;
   background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
   content: "";
-  -webkit-transition: width 0.1s ease-out;
-  transition: width 0.1s ease-out;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
 }
 
 .presentation__watch:hover::after, .presentation__watch:focus:after {
@@ -290,6 +290,13 @@ header,
 .service__item img {
   width: 74px;
   height: 74px;
+}
+
+.service__item:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .service__title_item {
@@ -458,6 +465,13 @@ header,
   height: 90px;
 }
 
+.team__item:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .team__title_item {
   margin: 0 0 0 0;
   font-style: normal;
@@ -491,6 +505,12 @@ header,
 .team__social img {
   width: 18px;
   height: 18px;
+}
+
+.team__social img:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0.5;
 }
 
 .subscribe {
@@ -864,7 +884,7 @@ header,
   .team,
   .subscribe,
   .footer {
-    width: 90%;
+    width: 95%;
   }
   .presentation__photo {
     width: 350px;
@@ -893,9 +913,11 @@ header,
     line-height: 24px;
   }
   .service__item {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px;
+    height: 200px;
   }
   .service__item img {
     width: 56px;
@@ -903,7 +925,7 @@ header,
   }
   .service__title_item,
   .__service__text_item {
-    margin: 10px 0;
+    margin: 5px 0;
   }
   .service__links img {
     width: 16px;
@@ -1029,10 +1051,10 @@ header,
   }
   .menu__item {
     display: block;
-    padding: 6px 24px;
+    padding: 12px 24px;
     text-align: center;
     color: #F9FAFB;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: normal;
     text-decoration: none;
     -webkit-transition-duration: .25s;
